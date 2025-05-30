@@ -1,40 +1,5 @@
-<div>
-  <p align="center">
-    <a href="https://discordx.js.org" target="_blank" rel="nofollow">
-      <img src="https://discordx.js.org/discordx.svg" width="546" />
-    </a>
-  </p>
-  <p align="center">
-    <a href="https://discordx.js.org/discord"
-      ><img
-        src="https://img.shields.io/discord/874802018361950248?color=5865F2&logo=discord&logoColor=white"
-        alt="Discord server"
-    /></a>
-    <a href="https://www.npmjs.com/package/discordx"
-      ><img
-        src="https://img.shields.io/npm/v/discordx.svg?maxAge=3600"
-        alt="NPM version"
-    /></a>
-    <a href="https://www.npmjs.com/package/discordx"
-      ><img
-        src="https://img.shields.io/npm/dt/discordx.svg?maxAge=3600"
-        alt="NPM downloads"
-    /></a>
-    <a href="https://github.com/discordx-ts/discordx/actions"
-      ><img
-        src="https://github.com/discordx-ts/discordx/workflows/Build/badge.svg"
-        alt="Build status"
-    /></a>
-    <a href="https://www.paypal.me/vijayxmeena"
-      ><img
-        src="https://img.shields.io/badge/donate-paypal-F96854.svg"
-        alt="paypal"
-    /></a>
-  </p>
-  <p align="center">
-    <b> Create a discord bot with TypeScript and Decorators! </b>
-  </p>
-</div>
+> This is a discordx template remix for developing with Bun runtime.
+> It also features Biome lint checker and code formatter
 
 # 📖 Introduction
 
@@ -42,23 +7,20 @@ A blank template with one command and one event, This is a useful template if yo
 
 # 🏗 Development
 
-```
-npm install
-npm run dev
-```
-
-If you want to use [Nodemon](https://nodemon.io/) to auto-reload while in development:
+Rename `.env.example` to `.env` and input your bot token.
 
 ```
-npm run watch
+bun install
+bun dev
 ```
+
+`bun dev` automatically reloads your project when you make changes to your code.
 
 # 💻 Production
 
 ```
-npm install --production
-npm run build
-npm run start
+bun install --production
+bun run start
 ```
 
 # 🐋 Docker

@@ -1,6 +1,6 @@
-import type { Interaction, Message } from "discord.js";
-import { IntentsBitField } from "discord.js";
-import { Client } from "discordx";
+import type { Interaction, Message } from 'discord.js';
+import { IntentsBitField } from 'discord.js';
+import { Client } from 'discordx';
 
 export const bot = new Client({
   // To use only guild command
@@ -21,11 +21,11 @@ export const bot = new Client({
 
   // Configuration for @SimpleCommand
   simpleCommand: {
-    prefix: "!",
+    prefix: '!',
   },
 });
 
-bot.once("ready", () => {
+bot.once('ready', () => {
   // Make sure all guilds are cached
   // await bot.guilds.fetch();
 
@@ -40,13 +40,13 @@ bot.once("ready", () => {
   //    ...bot.guilds.cache.map((g) => g.id)
   //  );
 
-  console.log("Bot started");
+  console.log('Bot started');
 });
 
-bot.on("interactionCreate", (interaction: Interaction) => {
+bot.on('interactionCreate', (interaction: Interaction) => {
   bot.executeInteraction(interaction);
 });
 
-bot.on("messageCreate", (message: Message) => {
+bot.on('messageCreate', (message: Message) => {
   void bot.executeCommand(message);
 });
